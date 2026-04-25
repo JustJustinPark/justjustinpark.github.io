@@ -1,4 +1,5 @@
 ---
+title: Projects
 icon: fas fa-palette
 order: 2
 ---

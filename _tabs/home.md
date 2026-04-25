@@ -1,7 +1,8 @@
 ---
+title: Home
 icon: fas fa-house
-order: 0
 permalink: /
+order: 0
 ---
 
 # Hi there!

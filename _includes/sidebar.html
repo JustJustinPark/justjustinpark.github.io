@@ -30,7 +30,7 @@
       {% for tab in site.tabs %}
         <!-- don't re-render Home tab -->
         {% if tab.url == '/' | relative_url %}{% continue %}{% endif %}
-        <!-- don't render blog tabs yet -->
+        <!-- don't render blog-related tabs yet -->
         {% assign url_split = tab.url | split: '/' %}
         {% if url_split[1] == 'blog' %}{% continue %}{% endif %}
         <li class="nav-item{% if page.url == tab.url %}{{ " active" }}{% endif %}">
@@ -45,7 +45,7 @@
 
       <hr>
 
-      <!-- blog paginator -->
+      <!-- Blog tab (paginator) -->
       <li class="nav-item{% if page.url == '/blog/' %}{{ " active" }}{% endif %}">
         <a href="{{ '/blog/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-feather"></i>
@@ -53,11 +53,13 @@
         </a>
       </li>
 
-      <!-- other blog tabs -->
+      <!-- other blog-related tabs -->
       {% for tab in site.tabs %}
         <!-- skip non-blog tabs -->
         {% assign url_split = tab.url | split: '/' %}
         {% if url_split[1] != 'blog' %}{% continue %}{% endif %}
+        <!-- skip Tags tab -->
+        {% if url_split.last == 'tags' %}{% continue %}{% endif %}
         <li class="nav-item{% if page.url == tab.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">
             <i class="fa-fw {{ tab.icon }}"></i>
