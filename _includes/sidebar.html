@@ -18,7 +18,7 @@
 
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
-      <!-- home -->
+      <!-- HOME -->
       <li class="nav-item{% if page.url == '/' | relative_url %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
@@ -26,11 +26,11 @@
         </a>
       </li>
 
-      <!-- tabs -->
+      <!-- TABS -->
+      <!-- don't re-render Home -->
+      <!-- skip blog-related tabs for now -->
       {% for tab in site.tabs %}
-        <!-- don't re-render Home tab -->
         {% if tab.url == '/' | relative_url %}{% continue %}{% endif %}
-        <!-- don't render blog-related tabs yet -->
         {% assign url_split = tab.url | split: '/' %}
         {% if url_split[1] == 'blog' %}{% continue %}{% endif %}
         <li class="nav-item{% if page.url == tab.url %}{{ " active" }}{% endif %}">
@@ -45,7 +45,7 @@
 
       <hr>
 
-      <!-- Blog tab (paginator) -->
+      <!-- BLOG tab (paginator) -->
       <li class="nav-item{% if page.url == '/blog/' %}{{ " active" }}{% endif %}">
         <a href="{{ '/blog/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-feather"></i>
@@ -54,11 +54,10 @@
       </li>
 
       <!-- other blog-related tabs -->
+      <!-- skip Tags -->
       {% for tab in site.tabs %}
-        <!-- skip non-blog tabs -->
         {% assign url_split = tab.url | split: '/' %}
         {% if url_split[1] != 'blog' %}{% continue %}{% endif %}
-        <!-- skip Tags tab -->
         {% if url_split.last == 'tags' %}{% continue %}{% endif %}
         <li class="nav-item{% if page.url == tab.url %}{{ " active" }}{% endif %}">
           <a href="{{ tab.url | relative_url }}" class="nav-link">

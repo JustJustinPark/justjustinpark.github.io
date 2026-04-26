@@ -1,6 +1,7 @@
 ---
 title: Projects
 icon: fas fa-palette
+permalink: /projects/
 order: 2
 ---
 

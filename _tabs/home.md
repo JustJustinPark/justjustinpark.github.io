@@ -19,7 +19,7 @@ I am also an avid a cappella singer, arranger, and enjoyer! I currently sing wit
 
 On the side, I co-own and co-operate a small art business called butter and boba with my girlfriend. [Check us out](https://butterandboba.com/){:target="\_blank" :rel="noopener noreferrer"} if you're interested!
 
-In my free time, I like to play board games, card games, capoeira (an Afro-Brazilian martial art), and violin.
+In my free time, I like to read, play board games and card games, explore San Francisco, and play capoeira (an Afro-Brazilian martial art).
 
 ## Profile and stats
 - 👉🏼 **pronouns:** he/him/his
