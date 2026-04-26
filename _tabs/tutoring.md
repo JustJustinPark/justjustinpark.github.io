@@ -1,7 +1,6 @@
 ---
 title: Tutoring
 icon: fas fa-chalkboard-user
-permalink: /tutoring/
 order: 3
 ---
 

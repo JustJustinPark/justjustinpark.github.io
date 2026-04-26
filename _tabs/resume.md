@@ -1,7 +1,6 @@
 ---
 title: Resume
 icon: fas fa-info-circle
-permalink: /resume/
 order: 1
 ---
 
