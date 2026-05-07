@@ -15,10 +15,11 @@
   --primary-text-color: #1f1f1f;
   --muted-text-color: #777777;
   --sidebar-bg-color: #efe9e5;
+  --sidebar-hover-bg-color: #cceebb55;
   --sidebar-text-color: #2a2a2a;
   --sidebar-text-color-active: #255820;
-  --sidebar-hover-bg-color: #cceebb55;
   --divider-color: #ddccbb;
+  --button-color: #eeffee;
 }
 
 body {
@@ -112,5 +113,29 @@ hr {
 
 table {
   border: 2px solid var(--divider-color);
-  width: 100%;
+  margin: 0 auto;
+  &.full-width {
+    width: 100%;
+  }
+}
+
+a.button {
+  padding: 0.3em;
+  border: 2px outset var(--divider-color);
+  border-radius: 5px;
+  background-color: var(--sidebar-bg-color);
+  color: var(--primary-text-color);
+  font-size: 1.5em;
+  text-align: center;
+  &:hover {
+    background-color: var(--sidebar-hover-bg-color);
+  }
+  &:active {
+    border-style: inset;
+  }
+  &.center {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+  }
 }
