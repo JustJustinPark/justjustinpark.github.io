@@ -111,7 +111,7 @@ hr {
   }
 }
 
-table {
+table.with-border {
   border: 2px solid var(--divider-color);
   margin: 0 auto;
   &.full-width {

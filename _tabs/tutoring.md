@@ -4,13 +4,12 @@ icon: fas fa-chalkboard-user
 order: 3
 ---
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-> summer tutoring
+> Summer academic enrichment and competition prep now available! Sign up today and be on track for success next school year 📚
 {: .prompt-tip}
-<!-- markdownlint-restore -->
 
-Stay ahead of the curve with a personalized tutoring experience for high school and college! Academic support and enrichment, competition prep, and more. Scroll down to learn about my offerings, then email [tutoringwithjustin@gmail.com](mailto:tutoringwithjustin@gmail.com){:target="\_blank" :rel="noopener noreferrer"} to schedule a free trial lesson!
+Stay ahead of the curve with a personalized tutoring experience for high school and college!
+Academic support and enrichment, competition prep, and more.
+Scroll down to learn about my offerings, then email [tutoringwithjustin@gmail.com](mailto:tutoringwithjustin@gmail.com){:target="\_blank" :rel="noopener noreferrer"} to schedule a free trial lesson!
 
 
 ## Rates
@@ -20,7 +19,7 @@ Stay ahead of the curve with a personalized tutoring experience for high school 
 | **Mathematics**<br>(algebra, geometry, precalculus, calculus, statistics,<br>multivariable calculus, linear algebra, competition math) |          $120          |           $150            |
 |                                       **Physics**<br>(high school and college, AP Physics 1/2/C)                                       |          $120          |           $150            |
 |                    **Music Theory and Arranging/Composition**<br>(classical theory, part-writing, AP Music Theory)                     |          $80           |           $100            |
-{: .full-width}
+{: .with-border .full-width}
 
 <hr>
 
